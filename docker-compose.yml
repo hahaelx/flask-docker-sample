@@ -19,8 +19,8 @@ web:
 
 database:
   image: postgres:9
-  env_file: db.env
+  env_file: database/db.env
   volumes:
-    - ./db:/var/lib/postgresql/data
+    - ./database:/var/lib/postgresql/data
   expose:
     - 5432
