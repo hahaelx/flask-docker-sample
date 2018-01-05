@@ -1,0 +1,9 @@
+Flask
+flask-restplus
+Flask-SQLAlchemy
+Flask-Script
+gunicorn
+gevent
+
+
+

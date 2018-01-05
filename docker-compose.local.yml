@@ -1,0 +1,15 @@
+web:
+  extends:
+    file: docker-compose.base.yml
+    service: web
+  ports:
+    - "80:5000"
+  command: python app.py
+
+database:
+  image: postgres:9
+  env_file: db.env
+  volumes:
+    - ./db:/var/lib/postgresql/data
+  expose:
+    - 5432
